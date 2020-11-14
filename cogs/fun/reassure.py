@@ -23,9 +23,21 @@ class Reassure(commands.Cog):
 
         # If no name passed through, default to the author of the command
         if who is None:
+            # await context.send( 'la variable who vale ' + who );
             who = context.message.author.name
 
+        await context.send( 'la variable who vale ' + who );
+
+        #guild = Guild(context.guild)
+        members = context.guild.members
         user = context.guild.get_member_named(who)
+        if members is not None:
+            await context.send( 'la variable members no esta vacia ' );
+            for mbr in members:
+                await context.send( 'Encontre un member llamado ' + mbr.display_name );
+
+        #user = 'McJack'
+	#user = User(context.message.author.id, context.guild.id, context)
 
         # If we couldn't find the user, display an error
         if user is None:
