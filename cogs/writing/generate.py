@@ -8,7 +8,7 @@ class Generate(commands.Cog, CommandWrapper):
 
     def __init__(self, bot):
         self.bot = bot
-        self._supported_types = ['char', 'place', 'land', 'idea', 'book', 'book_fantasy', 'book_horror', 'book_hp', 'book_mystery', 'book_rom', 'book_sf', 'prompt']
+        self._supported_types = ['char', 'place', 'land', 'idea', 'book', 'book_fantasy', 'book_horror', 'book_hp', 'book_mystery', 'book_rom', 'book_sf', 'prompt', 'env']
         self._arguments = [
             {
                 'key': 'type',
@@ -45,6 +45,7 @@ class Generate(commands.Cog, CommandWrapper):
             !generate book_hp - generates 10 Harry Potter book title
             !generate idea - generates a random story idea
             !generate prompt - generates a story prompt
+            !generate env - generates a random environment idea
         """
 
         user = User(context.message.author.id, context.guild.id, context)
@@ -61,6 +62,7 @@ class Generate(commands.Cog, CommandWrapper):
         type = args['type'].lower()
         amount = int(args['amount'])
 
+        lib.debug("type of generator = " + str(type))
         generator = NameGenerator(type, context)
         results = generator.generate(amount)
         names = '\n'.join(results['names'])

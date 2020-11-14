@@ -30,6 +30,7 @@ class NameGenerator:
         asset_file = 'gen_' + self.type
         source = lib.get_asset(asset_file, self.context.guild.id)
         retry_attempts = 0
+        lib.debug("self.type = " + str(self.type))
 
         # If we loaded the asset source okay, then let's loop through and generate some responses
         if source:
@@ -80,6 +81,7 @@ class NameGenerator:
                 name = re.sub(r"\$([a-z0-9]+)", replace, format)
 
                 # If we've already had this exact one, try again, up to self.MAX_RETRIES times
+                lib.debug("name = " + str(name))
                 if name in generated_names and retry_attempts < self.MAX_RETRIES:
                     x -= 1
                     retry_attempts += 1

@@ -1,0 +1,13 @@
+{
+    "names": {
+
+        "house": ["cook", "table(s)", "chair(s)", "chandelier(s)"],
+        "land": ["grass", "trees", "birds", "rocks", "sea"],
+        "adj": ["old", "beautiful", "supercalifragilisticspialidousous"],
+        "count": ["a few", "many", "several"]
+
+    },
+
+    "formats": ["You're in a $house. You can see $count $house, a $adj $house and $count $adj $house.", "You're in a $adj $land. You can see $count $land, a $adj $land and $count $adj $land."]
+
+}
