@@ -3,11 +3,40 @@
 
         "house": ["cook", "table(s)", "chair(s)", "chandelier(s)"],
         "land": ["grass", "trees", "birds", "rocks", "sea"],
-        "adj": ["old", "beautiful", "supercalifragilisticspialidousous"],
-        "count": ["a few", "many", "several"]
+        "count": ["a few", "many", "several", "a lot of", "a proud of"],
+        "place": ["airport", "port", "store", "drugstore"],
+        "room": ["kitchen", "bedroom", "garage"],
+        "feel": ["dizzy", "strange", "alive", "optimistic", "energetic", "happy", "sad", "fearful", "feared", "unfortunate", "lucky", "poor", "miserable", "wonderful", "pretty", "fine"],
+
+        "furniture": ["oven", "sofa", "chair", "table", "glass", "cup", "screen", "computer", "window", "telephone", "cell"],
+        "furniturepl": ["ovens", "sofas", "chairs", "tables", "glasses", "cups", "screens", "computers", "windows", "telephones", "cells"],
+
+        "ppl": ["Girl", "Boy", "man", "woman", "carpenter", "people"],
+        "pplpl": ["Girls", "Boys", "men", "women", "carpenters"],
+
+        "dmcanimal": ["Cat", "Dog", "hamster", "bird", "snake", "spider", "mouse", "cockroach"],
+        "dmcanimalpl": ["Cats", "Dogs", "hamsters", "birds", "snakes", "spiders", "mice", "cockroach"],
+
+        "urbanimal": ["Cat", "Dog", "rat", "bird", "frog", "lizard", "dove", "ladybug", "cockroach", "mosquito", "fly"],
+        "urbanimalpl": ["Cats", "Dogs", "rats", "birds", "frogs", "lizards", "doves", "ladybugs", "cockroaches", "mosquitos", "flies"],
+
+        "veg": ["tree", "grass", "girasol", "flower", "rock", "bush"],
+        "vegpl": ["trees", "girasols", "flowers", "rocks", "bushes"],
+
+        "cmnobj": ["scar", "tattoo", "car", "train", "boat", "plane", "hand", "skull", "bone", "eye", "skin", "mind", "wood", "metal", "iron", "glass", "crystal", "blade", "sword", "axe", "spear", "hammer", "knife", "door", "window", "box", "cup", "bowl", "book", "papers", "chair", "throne", "room", "stairs", "light", "ghost", "demon", "spirit", "angel", "coat", "gloves", "hat", "shoes", "mask", "crown", "ring", "necklace", "mirror", "fire", "water", "ice", "dirt", "wind", "city", "town", "country", "agent", "guardian", "moon", "sun", "star", "star", "tree", "flower", "rose", "game", "edge", "centre", "core", "zenith", "start", "finish", "end", "soldier", "knight", "wizard", "church", "grave", "stone", "blood", "king", "queen", "prince", "princess", "jester", "hunter", "bard", "assassin", "floor", "ceiling", "wool", "sound", "touch", "taste", "world", "love", "life", "shadow", "land", "sea"],
+        "cmnobjpl": ["scars", "tattoos", "cars", "trains", "boats", "planes", "hands", "skulls", "bones", "eyes", "skins", "minds", "woods", "metals", "irons", "glasses", "crystals", "blades", "swords", "axes", "spears", "hammers", "knives", "doors", "windows", "boxes", "cups", "bowls", "books", "papers", "chairs", "thrones", "rooms", "stairs", "lights", "ghosts", "demons", "spirits", "angels", "coats", "gloves", "hats", "shoes", "masks", "crowns", "rings", "necklaces", "mirrors", "fires", "waters", "ices", "dirts", "winds", "cities", "towns", "countries", "agents", "guardians", "moons", "suns", "stars", "stars", "trees", "flowers", "roses", "games", "edges", "centres", "cores", "zeniths", "starts", "finishes", "ends", "soldiers", "knights", "wizards", "churches", "graves", "stones", "bloods", "kings", "queens", "princes", "princesses", "jesters", "hunters", "bards", "assassins", "floors", "ceilings", "wools", "sounds", "touches", "tastes", "worlds", "lives", "shadows", "lands", "seas"],
+
+        "pre": ["summer", "winter", "autumn", "spring", "daylight", "twilight"],
+        "adj": ["old", "beautiful", "small", "big", "thin", "fat", "tall", "short", "black", "white", "red", "blue", "green", "emerald", "ruby", "crystal", "silent", "dark", "light", "darkest", "tallest", "blood", "early", "late", "last", "first", "fool", "wise", "quiet", "stone", "wooden", "farthest", "nearest", "subtle", "lower", "higher", "northern", "southern"],
+        "verb": ["runs", "ran", "walks", "walked", "plays", "played", "burns", "burned", "dives", "dove", "dreams", "dreamt", "falls", "fell", "forgets", "forgot", "goes", "went", "has", "had", "knows", "knew", "sees", "saw", "shows", "stands", "stood", "talks", "talked", "tears", "tore", "wakes", "woke", "leaps", "leapt", "kicks", "kicked", "steals", "stole", "loves", "loved", "lost"],
+        "rand": ["alone", "it all", "again", "home", "away", "everything", "nothing", "him", "her", "them", "many", "none", "more", "less", "time", "silence", "eternity", "the rain", "the wind", "the storm", "the snow", "the tears", "the sun", "the void", "the end"],
+        "prep": ["of", "with", "at", "from", "into", "for", "through", "without"]
 
     },
 
-    "formats": ["You're in a $house. You can see $count $house, a $adj $house and $count $adj $house.", "You're in a $adj $land. You can see $count $land, a $adj $land and $count $adj $land."]
+    "formats": ["You're in a $adj house in $pre. You see $count $adj $cmnobjpl in the near, a $cmnobj, $cmnobjpl and a $adj $dmcanimal. Suddenly, you found a $adj $urbanimal and you feel $feel.",
+                "You're in a $adj $place with $count $cmnobjpl, a $adj $urbanimal and $count $adj $pplpl.",
+                "You're in a park with $count $vegpl and $count $pplpl. Many $cmnobjpl stand in the ground, and a $adj $urbanimal $verb near to you.",
+                "There is a $cmnobj in the office. It's $pre, and $count $urbanimal $verb outhere. You see a $adj $furniture and $count $adj $furniturepl. A $ppl $verb with the $adj $ppl near of the $furniture."]
 
 }
