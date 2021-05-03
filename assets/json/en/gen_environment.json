@@ -1,0 +1,11 @@
+{
+    "names": {
+        "environment": [
+            "You're in a empty place. You see nobody in the near, but you found a book in a strange language",
+            "You're in a tiny room, with two chairs, a table and a broken window. A few blood drop brigths there."
+        ]
+    },
+
+    "formats": ["$environment"]
+
+}

@@ -404,6 +404,7 @@
     "generate:type:book_rom": "titres de livres romantiques/érotiques (en anglais)",
     "generate:type:idea": "idées d’histoires (en anglais)",
     "generate:type:prompt": "prompts (éléments perturbateurs)",
+    "generate:type:environment": "environnements",
 
     "sprint:argument:cmd": "Que voulez-vous faire avec la commande sprint ? `start` (commencer), `cancel` (annuler), `join` (rejoindre), etc.?",
     "sprint:cancelled": "**Le sprint a été annulé** : ",

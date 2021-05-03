@@ -8,7 +8,7 @@ class Generate(commands.Cog, CommandWrapper):
 
     def __init__(self, bot):
         self.bot = bot
-        self._supported_types = ['char', 'place', 'land', 'idea', 'book', 'book_fantasy', 'book_horror', 'book_hp', 'book_mystery', 'book_rom', 'book_sf', 'prompt', 'face']
+        self._supported_types = ['char', 'place', 'land', 'idea', 'book', 'book_fantasy', 'book_horror', 'book_hp', 'book_mystery', 'book_rom', 'book_sf', 'prompt', 'face', 'environment']
         self._urls = {
             'face': 'https://thispersondoesnotexist.com/image'
         }
@@ -49,6 +49,7 @@ class Generate(commands.Cog, CommandWrapper):
             !generate idea - generates a random story idea
             !generate prompt - generates a story prompt
             !generate face - generates a random person's face
+            !generate environment - generates a random environment
         """
 
         user = User(context.message.author.id, context.guild.id, context)
@@ -74,7 +75,7 @@ class Generate(commands.Cog, CommandWrapper):
         join = '\n'
 
         # For prompts, add an extra line between them.
-        if type == 'prompt':
+        if (type == 'prompt') or (type == 'environment'):
             join += '\n'
 
         names = join.join(results['names'])

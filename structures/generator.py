@@ -92,7 +92,7 @@ class NameGenerator:
         generated_names.sort()
 
         # Uppercase the first letter of each word, if it's anything but idea generation or prompt generatio
-        if self.type != 'idea' and self.type != 'prompt':
+        if self.type != 'idea' and self.type != 'prompt' and self.type != 'environment':
             generated_names = map(lambda el : string.capwords(el), generated_names)
 
         # Generate the message
